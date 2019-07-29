@@ -101,7 +101,7 @@ If the analytics tool you use does not have a filter for the environment, then y
 
 ## Password pasting is not disabled
 
-Some claim the disabling password paste increases website security. National Cyber Security Centre claims that it is invalid. According to Google, allowing users paste the password improves security, because it enables them to use password managers.
+Some claim the disabling password paste increases website security. National Cyber Security Centre claims that it is invalid. According to Google, allowing users to paste the password improves security, because it enables them to use password managers.
 
 ## Document has title and meta description
 
@@ -112,9 +112,9 @@ Title tag specifies the title of the website. The meta description tag contains 
 <meta name="description" content="A short description of what this page is about">
 ```
 
-Title is what displayed in the search engine results, displayed in the browser tab and in the social network cards when sharing (if a separate title is not provided for the social network). 
+The title is what displayed in the search engine results, displayed in the browser tab and the social network cards when sharing (if a separate title is not provided for the social network). 
 
-Description is displayed in the search results as well. It is not directly used in the ranking algorithm, so it doesn't affect chances of appearing in the search result, but it makes it more likely that users will click on you website in the results. That will increase the click-through-rate (CTR) of your page for Google, that means that Google will consider it a good result and will rank higher in future search results.
+The description is displayed in the search results as well. It is not directly used in the ranking algorithm, so it doesn't affect chances of appearing in the search result, but it makes it more likely that users will click on your website in the results. That will increase the click-through-rate (CTR) of your page for Google, that means that Google will consider it a good result and will rank higher in future search results.
 
 ## External links have rel="noopener"
 
@@ -124,7 +124,7 @@ If you have links to external links on your webpage, especially the ones that op
 <a href="http://example.com" target="_blank" rel="noopener">Some other site</a>
 ```
 
-There are security and performance benefits in doing so. Without it the external page can access your window object using `window.opener`. You can learn more about what vulnerabilities are solved by using the `noopener` here: [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
+There are security and performance benefits in doing so. Without it, the external page can access your window object using `window.opener`. You can learn more about what vulnerabilities are solved by using the `noopener` here: [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
 The other website may also run on the same process as your current page, so it the external page is running some heavy JavaScript it will negatively affect your website performance. `noopener` prevents that as well. 
 
