@@ -3,6 +3,14 @@ Things to double-check before launching a website
 
 Before launching the website ensure that:
 
+- [ ] [All images have "Alt" tags](#all-images-have-alt-tags)
+- [ ] [Website is allowed for indexing](#website-is-allowed-for-indexing)
+- [ ] [Social Media meta tags are present](#social-media-meta-tags-are-present)
+- [ ] [Favicon is present](#favicon-is-present)
+- [ ] [Progressive Web App meta tags are present](#progressive-web-app-meta-tags-are-present)
+- [ ] [Analytics tool is tracking only in the production environment](#analytics-tracking-only-in-the-production-environment)
+- [ ] [Document has title and meta description](#document-has-title-and-meta-description)
+- [ ] [External links have rel="noopener"](#external-links-have-relnoopener)
 
 ## All images have "Alt" tags
 An alt tag ("alt attribute" or "alt description") is an attribute applied to an image which serves as an invisible description of the image. 
