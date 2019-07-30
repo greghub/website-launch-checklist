@@ -12,7 +12,7 @@ Before launching the website ensure that:
 - [Document has title and meta description](#document-has-title-and-meta-description)
 - [External links have rel="noopener"](#external-links-have-relnoopener)
 - [Remove unused CSS](#remove-unused-css)
-- [Efficient cache policy and compression is used on static assets](efficient-cache-policy-and-compression-is-used-on-static-assets)
+- [Efficient cache policy and compression is used on static assets](#efficient-cache-policy-and-compression-is-used-on-static-assets)
 
 ## All images have "Alt" tags
 An alt tag ("alt attribute" or "alt description") is an attribute applied to an image which serves as an invisible description of the image. 
