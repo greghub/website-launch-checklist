@@ -99,10 +99,6 @@ Android will use the "apple-touch-icon" value or the favicon (if the meta tag is
 
 If the analytics tool you use does not have a filter for the environment, then you will be polluting the analytics of your website with results from testing in a non-production environment. You can add the filter in the analytics tool or conditionally embed the code only on the production environment.
 
-## Password pasting is not disabled
-
-Some claim the disabling password paste increases website security. National Cyber Security Centre claims that it is invalid. According to Google, allowing users to paste the password improves security, because it enables them to use password managers.
-
 ## Document has title and meta description
 
 Title tag specifies the title of the website. The meta description tag contains a short description of the page
