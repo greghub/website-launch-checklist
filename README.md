@@ -95,7 +95,7 @@ Developers are given some control to make the website experience closer to a nat
 
 Android will use the "apple-touch-icon" value or the favicon (if the meta tag is not present) to create a home screen icon.
 
-## Analytics tracking only in the production environment
+## Analytics tool is tracking only in the production environment
 
 If the analytics tool you use does not have a filter for the environment, then you will be polluting the analytics of your website with results from testing in a non-production environment. You can add the filter in the analytics tool or conditionally embed the code only on the production environment.
 
