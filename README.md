@@ -11,6 +11,8 @@ Before launching the website ensure that:
 - [ ] [Analytics tool is tracking only in the production environment](#analytics-tracking-only-in-the-production-environment)
 - [ ] [Document has title and meta description](#document-has-title-and-meta-description)
 - [ ] [External links have rel="noopener"](#external-links-have-relnoopener)
+- [ ] [Remove unused CSS](#remove-unused-css)
+- [ ] [Efficient cache policy and compression is used on static assets](efficient-cache-policy-and-compression-is-used-on-static-assets)
 
 ## All images have "Alt" tags
 An alt tag ("alt attribute" or "alt description") is an attribute applied to an image which serves as an invisible description of the image. 
@@ -134,3 +136,22 @@ The other website may also run on the same process as your current page, so it t
 
 Read more about it here: [The performance benefits of rel=noopener](https://jakearchibald.com/2016/performance-benefits-of-rel-noopener/)
 
+## Remove unused CSS
+
+As you make a lot of changes to your website or when you use a lot of external libraries or CSS frameworks then chances are that your CSS file contains a lot of styles that are not used by your pages. For example, you may be using one theme of some plugin, but the CSS for the other themes just stays in your CSS file unused and the stylesheet file size grows.
+
+You can remove all the unused styles using a tool called [PurgeCSS](https://github.com/FullHuman/purgecss). You can use it with CLI or use it in Webpack, Gulp, etc. It will analyze your pages, match the selectors used on pages with the ones in the CSS files and remove the unused styles. On a recent project of mine, that used Tailwind CSS framework, there were, of course, a lot of utilities that I didn't use. PurgeCSS decreased the size of my app.css file from 214KiB to 45.6Kib.
+
+Be careful though, that if a plugin dynamically creates elements on the page, PurgeCSS will not detect the styles of that element. But you can whitelist selectors by passing the selectors or selector patterns in the config, and you can also whitelist selector by using a special comment to whitelist specific rules. Read more about [PurgeCSS Whitelisting](https://www.purgecss.com/whitelisting).
+
+## Efficient cache policy and compression is used on static assets
+
+When the browser requests a resource, the server can instruct the browser for how long it can store, or "cache", the resource. The next time the resource is required it can use the local copy. It will greatly improve speed and reduce loads on the server. You can configure your server to return a header, telling how long the asset shall be cached:
+
+```
+Cache-Control: max-age=31557600 // 31557600 seconds is 356 days
+```
+
+You shall set the max-age based on how often your assets change.
+
+You can also configure your server to use compression, such as Gzip compression, which will let the resources transferred faster. Compressing CSS files with gzip saves around 50-70% of the file size. 
