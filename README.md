@@ -132,7 +132,7 @@ If you have links to external links on your webpage, especially the ones that op
 
 There are security and performance benefits in doing so. Without it, the external page can access your window object using `window.opener`. You can learn more about what vulnerabilities are solved by using the `noopener` here: [About rel=noopener](https://mathiasbynens.github.io/rel-noopener/)
 
-The other website may also run on the same process as your current page, so it the external page is running some heavy JavaScript it will negatively affect your website performance. `noopener` prevents that as well. 
+The other website may also run on the same process as your current page, so if the external page is running some heavy JavaScript it will negatively affect your website performance. `noopener` prevents that as well. 
 
 Read more about it here: [The performance benefits of rel=noopener](https://jakearchibald.com/2016/performance-benefits-of-rel-noopener/)
 
